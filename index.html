@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminalen</title>
+    <link rel="stylesheet" href="./styling/main.css">
+    <link rel="shortcut icon" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p class="airportMessage"> * Vennligst ha pass og boardingkort klar *</p>
+    <div class="adminBox">
+        <button class="adminBtn">Admin</button>
+        <div id="time"></div>
+    </div>
+   
+    <div class="boxSuper"> 
+        <div class="title">
+        <h1>Fornebu Tech Flyplass</h1>
+      
+      
+    </div> 
+    <div class="subheaders">
+           <p class="subhead">Flight </p>
+           <p class="subhead">Destinasjon</p>
+           <p class="subhead">Tid</p>
+           <p class="subhead">Gate</p>
+           <p class="subhead">Merknader</p>
+        </div>
+        <div class="box">
+            <div class="col col-1"></div>
+            <div class="col col-2"></div>
+            <div class="col col-3"></div>
+            <div class="col col-4"></div>
+            <div class="col col-5"></div>
+        </div>
+        
+    </div>
+   <div class="admin">
+            
+            <input class="input" type="text" placeholder ="Flight nr" name="" id="inpFno" maxlength="6">
+            <input class="input" type="text" placeholder ="Destinasjon" name="" id="inpDes">
+            <input class="input" type="time" placeholder ="Tid" name="" id="inpTime">
+            <input class="input" type="text" placeholder ="Gate" name="" id="inpGate" maxlength="4">
+            <input class="input" type="text" placeholder ="Merknader" name="" id="inpRemarks">
+            <button class="add">Add</button>
+            <span class="close">X</span>
+            
+        </div>
+      
+        <div class="tilgang">
+            <input class="inpPassword" type="password">
+            <button class="checkPassword">Adgang</button></div>
+        
+    
+</body>
+<script src='./script/index.js'></script>
+<script src='./script/admin.js'></script>
+<script src='./script/timeandmessage.js'></script>
+</html>

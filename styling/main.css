@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif; 
+    background-image: url('https://images.unsplash.com/photo-1520437358207-323b43b50729?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 98.3vh;  /*body lengde ikke fastsatt */
+    padding: 1% 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    overflow: hidden;
+  
+}
+
+
+.box {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 13% 30% 11% 12% auto;
+ 
+   
+}
+
+
+.col {
+    font-size: 2vw; /* responsive according width size*/
+    padding: 7px;
+    background-color: black;
+    font-weight: bold;
+    
+}
+
+.col-3, .col-4 {
+    text-align: center;
+}
+
+p {
+    background-color: white;
+    padding: 3px;
+   
+}
+
+.title {
+    background-color: black;
+    color: goldenrod;
+    height: 8vh;
+    padding: 8px;
+    font-size: 1.4vw;
+    display: grid;
+    align-items: center;
+   
+}
+
+
+/* child combinator selectors */
+.col-5 > p:nth-child(2), .col-5 > p:nth-child(5) {
+    color: red;
+}
+
+.col-5 > p:nth-child(1), .col-5 > p:nth-child(4) {
+    color: greenyellow;
+}
+
+
+.subheaders {
+    display: flex;
+    display: grid;
+    grid-template-columns: 13% 30% 11% 12% auto;
+    background-color: black;
+    margin: none;
+    padding: 8px;
+    
+}
+
+.subhead {
+    background-color: black;
+    color: goldenrod;
+    font-size: 2vw;
+  
+   
+    
+}
+
+.boxSuper {
+    height: fit-content;
+    opacity: 0.85;
+    padding: none;
+    width: 100%;
+
+
+}
+
+
+input {
+    height: 4.5vh;
+    margin-top: 5px;
+    width: 13vw;
+}
+
+.admin {
+    opacity: 0.9;
+    height: fit-content;
+    padding: 8px;
+    width: fit-content;
+    margin-top: 1%;
+    display: none;
+
+ 
+}
+
+.tilgang {
+    margin-top: 10px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    
+
+}
+
+.inpPassword {
+    border-radius: 8px;
+    border: none;
+    width: 120px;
+    width: 150px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.checkPassword {
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    background-color: goldenrod;
+    width: 12vw;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    font-family: 'Orbitron', sans-serif; 
+}
+
+button {
+    height: 40px;
+    width: 80px;
+
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+.newflight {
+    height: fit-content;
+    padding: 7px;
+    font-size: 2vw; /* responsive according width size*/
+    background-color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    display: grid;
+  
+}
+
+.close {
+    transform: translate(20px, -8px);
+    position: absolute;
+    background-color: goldenrod;
+    font-size: 1.5vw;
+    width: 3vw;
+    text-align: center;
+    
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+.adminBtn {
+    width: 5.5vw;
+    font-size: 1vw;
+    background-color: goldenrod;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+
+    font-family: 'Orbitron', sans-serif; 
+}
+
+.adminBox {
+    margin-left: 10px; 
+    margin-right: auto;
+    margin-bottom: 8px;
+    Width: 6vw;
+    display: flex;
+    width: 100%;
+
+}
+
+.airportMessage {
+    background-color: transparent;
+    color: goldenrod;
+    width: 100%;
+    animation: Scroll 30s infinite linear backwards;
+    font-size: 1vw;
+    margin: none;
+    padding: none;
+    display: absolute;
+
+}
+
+
+@keyframes Scroll {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#time {
+    color: goldenrod;
+    margin-left: auto;
+    width: 22vw;
+    font-size: 0.9vw;
+}
